@@ -124,10 +124,13 @@ img
 
 - Once you connect, you can open up command line and youll see that there is a local profile for the user you logged into as
 
-img
+![Uploading image.png…]()
+
 
 - You can also open up file explorer and go to This PC > Windows C: Drive > Users youll be able to see the users profile as well!
 
+---
+This effectively concludes the Creating Users with Powershell lab! As always, if you are done for the day, remember to stop your VM's on Azure until the next time you log in.
 
 
 
