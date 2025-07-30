@@ -1,2 +1,243 @@
+<p align="center">
+<img width="auto" height="auto" alt="AD" src="https://github.com/user-attachments/assets/8997adb8-3e38-4019-9da5-6fadf4bab369" />
+</p>
+
 # Creating Users with PowerShell
-*This lab we will demonstrate how to configure Remote Desktop access for non-administrative users on Client-1 by allowing "domain users" to connect. It will also include the creation of multiple user accounts via PowerShell on DC-1 and testing their login capabilities on Client-1, ensuring proper access and functionality*
+*This lab will demonstrate how to configure Remote Desktop access for non-administrative users on Client-1 by allowing "domain users" to connect. It will also include the creation of multiple user accounts via PowerShell on DC-1 and testing their login capabilities on Client-1, ensuring proper access and functionality.*
+
+
+## Lab Prerequisites
+
+- [Lab Architecture: Preparing Active Directory Infrastructure in Azure](https://github.com/EddieJIV/Lab-Architecture-Preparing-Active-Directory-Infrastructure-in-Azure/blob/main/README.md)
+- [Deploying & Configuring Active Directory](https://github.com/EddieJIV/Deploying-and-Configuring-Active-Directory)
+
+## Lab Enviorments
+
+-  Microsoft Azure
+-  Windows Domain Controller
+-  Windows 10
+- Remote Desktop Protocol 
+- Active Directory Users and Computers
+- PowerShell ISE
+
+## Setting up Remote Desktop for non-administrative users on Client-1:
+
+<img width="auto" height="auto" alt="login" src="https://github.com/user-attachments/assets/25d50219-f149-4ce2-a5d4-ee5d8f6e5285" />
+
+
+
+
+- First things first, log on to Client-1 as Jane_admin.
+  - mydomain.com\Jane_admin
+  - Cyberlab123!
+
+
+<img width="700" height="700" alt="Client-1 System" src="https://github.com/user-attachments/assets/313632cb-ef3c-44ab-ab29-978f797ad9ca" />
+
+
+- Navigate to System Properties.
+  - You can type "System" into the search bar for quick access.
+  - Again, this is where you can verify youre operating on the correct VM as well by double checking the Windows Specifications and noting that it is running Windows 10 pro.
+- Click on Remote Desktop.
+
+<img width="700" height="700" alt="RD Settings" src="https://github.com/user-attachments/assets/c8a9a1f1-2857-46f0-a334-9b6995ba881e" />
+
+- Within Remote Desktop, under User accounts, click on Select users that can remotely access this PC.
+
+<img width="auto" height="auto" alt="image" src="https://github.com/user-attachments/assets/47390dc9-17d5-450c-9d18-392198edeec3" />
+
+- Click Add...
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" height="1000" alt="Precheck" src="https://github.com/user-attachments/assets/7473e23c-d902-43d5-8b33-329dcdf4fb71" />
+    </td>
+    <td>
+      <img width="1000" height="1000" alt="Checked" src="https://github.com/user-attachments/assets/d380a575-6fbe-44c9-87ca-2824591540fb" />
+    </td>
+  </tr>
+</table>
+
+
+- Within the text box "Enter the object names to select" we are going to add "domain users" then click on Check Names
+- Once you click on check names you'll notice that it underlines and highlights domain users.
+- Once you've done so, go ahead and click OK.
+
+<img width="auto" height="auto" alt="Allow Domain Users" src="https://github.com/user-attachments/assets/dc1fd6ea-7006-4ade-bbf8-54ba42e45a59" />
+
+
+- From here simply click OK
+- Now, all domain users by default will be allowed to log into this computer, or in other words you can log into Client-1 as a normal, non-administrative user now.
+  - Normally this is something that is done is Gropup Policy but we are going to do it here for the sake of the lab and do some practicing with Group Policy in the next lab!
+
+## Part 2: Create additional users and attempt to log into Client-1 with one of the users 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>
+      <img width="1000" alt="Img1" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+    <td>
+      <img width="1000" alt="Img2" src="https://i.imgur.com/DJmEXEB.png" />
+    </td>
+  </tr>
+</table>
