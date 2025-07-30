@@ -112,6 +112,24 @@ From here you'll get to see our script work its magic and add 100 new users to o
 <img width="500" height="800" alt="AD UC" src="https://github.com/user-attachments/assets/2c6fc820-7e7a-4370-9342-30f553d7bdee" />
 
 - Navigate to Active Directory Users and Computers > mydomain.com > _EMPLOYEES to observe all our new users!
+- Pick a user of your choice from your list and attempt to log into Client-1 using their username and Password1.
+
+<img width="299" height="362" alt="image" src="https://github.com/user-attachments/assets/31e25107-5a46-4b6a-8e7a-cdee649ea092" />
+
+- I am going to use bob.saja for this example
+- So, for the full username, to get into our domain, I will put mydomain.com\bob.saja & Password1 for the password into the Client-1 login.
+  - You will essentially be doing the same thing with your Client-1's public IP & the user you chose from your _EMPLOYEES file.
+ 
+img
+
+- Once you connect, you can open up command line and youll see that there is a local profile for the user you logged into as
+
+img
+
+- You can also open up file explorer and go to This PC > Windows C: Drive > Users youll be able to see the users profile as well!
+
+
+
 
 
 
