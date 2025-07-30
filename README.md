@@ -88,12 +88,13 @@
 
 - When you open PowerShell, you should see that you are running it as an administrator, if you are, go ahead and click on the icon in the top left corner below the word file to open up a new script.
   - Or: Click on File > New
-- Paste the contents of [this script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the new file
+- Paste the contents of [this script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the new file.
 
 <img width="700" height="700" alt="Script Edit" src="https://github.com/user-attachments/assets/f6d0f417-6c1e-4353-bd37-613c1cea2fc7" />
 
 
-- We are going to make one simple edit to this script prior to running it, which is if you see at the top, it says number of accounts to create: 10000. We are going to change that number to 100 for the sake of this lab.
+- We are going to make one simple edit to this script prior to running it, on line 3, it says number of accounts to create: 10000. We are going to change that number to 100 for the sake of this lab.
+- Also, in the line above, take note that all the passwords for these users will be Password1. This is important for later on in the lab.
 
 
 <img width="900" height="900" alt="Save as" src="https://github.com/user-attachments/assets/fe27022b-ddba-4fe3-a01f-d13c0b0df562" />
