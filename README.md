@@ -73,6 +73,44 @@
 
 ## Part 2: Create additional users and attempt to log into Client-1 with one of the users 
 
+- Now, log into DC-1 as Jane_admin if you havent already.
+- Once you've logged into DC-1 as Jane_admin:
+
+<img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/04b77fc8-7675-419e-8b5d-c9e0e1e92b45" />
+
+- In the search bar, type in PowerShell, and RIGHT CLICK on Powershell ISE and RUN IT AS ADMINISTRATOR.
+  - I apologize for the caps. It is important that you run PowerShell ISE as an administrator and not simply open it.
+
+<img width="700" height="700" alt="Opening PowerShell ISE" src="https://github.com/user-attachments/assets/6baadcbc-b8c0-4f7b-b5e7-45ec38ddfaa8" />
+
+
+
+
+- When you open PowerShell, you should see that you are running it as an administrator, if you are, go ahead and click on the icon in the top left corner below the word file to open up a new script.
+  - Or: Click on File > New
+- Paste the contents of [this script](https://github.com/joshmadakor1/AD_PS/blob/master/Generate-Names-Create-Users.ps1) into the new file
+
+<img width="700" height="700" alt="Script Edit" src="https://github.com/user-attachments/assets/f6d0f417-6c1e-4353-bd37-613c1cea2fc7" />
+
+
+- We are going to make one simple edit to this script prior to running it, which is if you see at the top, it says number of accounts to create: 10000. We are going to change that number to 100 for the sake of this lab.
+
+
+<img width="900" height="900" alt="Save as" src="https://github.com/user-attachments/assets/fe27022b-ddba-4fe3-a01f-d13c0b0df562" />
+
+- Once you've made the edit, you can click file > Save as and name it "create-accounts" and simply save it to your desktop.
+
+<img width="700" height="700" alt="Run Script" src="https://github.com/user-attachments/assets/9b2d02e3-ee8d-4a8e-8747-28513287e05b" />
+
+- Once we saved our script, we can go ahead and click on run script!
+
+<img width="700" height="700" alt="Ran Script" src="https://github.com/user-attachments/assets/11268f33-8321-45d3-a362-f1ecb09ccf76" />
+
+From here you'll get to see our script work its magic and add 100 new users to our _EMPLOYEES folder in Active Directory Users and Computers! 
+
+<img width="500" height="800" alt="AD UC" src="https://github.com/user-attachments/assets/2c6fc820-7e7a-4370-9342-30f553d7bdee" />
+
+- Navigate to Active Directory Users and Computers > mydomain.com > _EMPLOYEES to observe all our new users!
 
 
 
