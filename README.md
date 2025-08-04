@@ -37,7 +37,7 @@
 
 - Navigate to System Properties.
   - You can type "System" into the search bar for quick access.
-  - Again, this is where you can verify youre operating on the correct VM as well by double checking the Windows Specifications and noting that it is running Windows 10 pro.
+  - Again, this is where you can verify youre operating on the correct VM as well by double-checking the Windows Specifications and noting that it is running Windows 10 Pro.
 - Click on Remote Desktop.
 
 <img width="700" height="700" alt="RD Settings" src="https://github.com/user-attachments/assets/c8a9a1f1-2857-46f0-a334-9b6995ba881e" />
@@ -69,7 +69,7 @@
 
 - From here simply click OK
 - Now, all domain users by default will be allowed to log into this computer, or in other words you can log into Client-1 as a normal, non-administrative user now.
-  - Normally this is something that is done is Gropup Policy but we are going to do it here for the sake of the lab and do some practicing with Group Policy in the next lab!
+  - Normally this is something that is done is Group Policy, but we are going to do it here for the sake of the lab and do some practicing with Group Policy in the next lab!
 
 ## Part 2: Create additional users and attempt to log into Client-1 with one of the users 
 
@@ -78,7 +78,7 @@
 
 <img width="700" height="700" alt="image" src="https://github.com/user-attachments/assets/04b77fc8-7675-419e-8b5d-c9e0e1e92b45" />
 
-- In the search bar, type in PowerShell, and RIGHT CLICK on Powershell ISE and RUN IT AS ADMINISTRATOR.
+- In the search bar, type in PowerShell, and RIGHT CLICK on PowerShell ISE and RUN IT AS ADMINISTRATOR.
   - I apologize for the caps. It is important that you run PowerShell ISE as an administrator and not simply open it.
 
 <img width="700" height="700" alt="Opening PowerShell ISE" src="https://github.com/user-attachments/assets/6baadcbc-b8c0-4f7b-b5e7-45ec38ddfaa8" />
@@ -93,7 +93,7 @@
 <img width="700" height="700" alt="Script Edit" src="https://github.com/user-attachments/assets/f6d0f417-6c1e-4353-bd37-613c1cea2fc7" />
 
 
-- We are going to make one simple edit to this script prior to running it, on line 3, it says number of accounts to create: 10000. We are going to change that number to 100 for the sake of this lab.
+- We are going to make one simple edit to this script prior to running it. On line 3, it says number of accounts to create: 10000. We are going to change that number to 100 for the sake of this lab.
 - Also, in the line above, take note that all the passwords for these users will be Password1. This is important for later on in the lab.
 
 
@@ -107,7 +107,7 @@
 
 <img width="700" height="700" alt="Ran Script" src="https://github.com/user-attachments/assets/11268f33-8321-45d3-a362-f1ecb09ccf76" />
 
-From here you'll get to see our script work its magic and add 100 new users to our _EMPLOYEES folder in Active Directory Users and Computers! 
+From here, you'll get to see our script work its magic and add 100 new users to our _EMPLOYEES folder in Active Directory Users and Computers! 
 
 <img width="500" height="800" alt="AD UC" src="https://github.com/user-attachments/assets/2c6fc820-7e7a-4370-9342-30f553d7bdee" />
 
@@ -120,17 +120,16 @@ From here you'll get to see our script work its magic and add 100 new users to o
 - So, for the full username, to get into our domain, I will put mydomain.com\bob.saja & Password1 for the password into the Client-1 login.
   - You will essentially be doing the same thing with the user you chose from your _EMPLOYEES file.
  
-img
+<img width="700" height="700" alt="cmdline-user" src="https://github.com/user-attachments/assets/7608b265-6883-4a1e-847c-d13660a96efe" />
 
-- Once you connect, you can open up command line and youll see that there is a local profile for the user you logged into as
+- Once you connect, you can open up the command line and you'll see that there is a local profile for the user you logged into as.
 
-![Uploading image.png…]()
+<img width="700" height="700" alt="user profile" src="https://github.com/user-attachments/assets/71ea9389-403a-4a2c-97de-5eec869531cb" />
 
-
-- You can also open up file explorer and go to This PC > Windows C: Drive > Users youll be able to see the users profile as well!
+- Additionally, you can open up file explorer and go to This PC > Windows C: Drive > Users > you'll be able to see the user's profile as well!
 
 ---
-This effectively concludes the Creating Users with Powershell lab! As always, if you are done for the day, remember to stop your VM's on Azure until the next time you log in.
+This effectively concludes the Creating Users with PowerShell lab! As always, if you are done for the day, remember to stop your VM's on Azure until the next time you log in.
 
 
 
