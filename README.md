@@ -128,8 +128,10 @@ From here, you'll get to see our script work its magic and add 100 new users to 
 
 - Additionally, you can open up file explorer and go to This PC > Windows C: Drive > Users > you'll be able to see the user's profile as well!
 
----
-This effectively concludes the Creating Users with PowerShell lab! As always, if you are done for the day, remember to stop your VM's on Azure until the next time you log in.
+## Conclusion: 
+This effectively concludes the Creating Users with PowerShell lab! We've sucessfully configured Remote Desktop access for non-adminstrative users on Client-1 by allowing domain users to connect. We created multiple user accounts on DC-1 using a PowerShell script. After executing the script, we verified the successful creation of these accounts by checking the _EMPLOYEES folder in Active Directory Users and Computers. Finally, we tested the login capabilities of one of the newly created users on Client-1, confirming that the user could successfully log in and access their profile.
+
+This lab reinforced our understanding of user management in Active Directory and the practical application of PowerShell for bulk account creation, enhancing our skills in managing remote access and user permissions in a Windows environment. As always, if you are done for the day, remember to stop your VM's on Azure until the next time you log in.
 
 
 
