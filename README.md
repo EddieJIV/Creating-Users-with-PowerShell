@@ -118,7 +118,7 @@ From here you'll get to see our script work its magic and add 100 new users to o
 
 - I am going to use bob.saja for this example
 - So, for the full username, to get into our domain, I will put mydomain.com\bob.saja & Password1 for the password into the Client-1 login.
-  - You will essentially be doing the same thing with your Client-1's public IP & the user you chose from your _EMPLOYEES file.
+  - You will essentially be doing the same thing with the user you chose from your _EMPLOYEES file.
  
 img
 
